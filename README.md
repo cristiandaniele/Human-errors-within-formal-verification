@@ -38,4 +38,5 @@ Tool --creates-->     Mutation_rules --to automatically<br/>generate-->Mutations
 # References
 
 [1] Basin, David, Sasa Radomirovic, and Lara Schmid. "Modeling human errors in security protocols." 2016 IEEE 29th Computer Security Foundations Symposium (CSF). IEEE, 2016.
+
 [2] Sempreboni, Diego, and Luca Vigano. "X-Men: A mutation-based approach for the formal analysis of security ceremonies." 2020 IEEE European Symposium on Security and Privacy (EuroS&P). IEEE, 2020.
