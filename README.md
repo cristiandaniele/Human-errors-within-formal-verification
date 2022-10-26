@@ -11,6 +11,17 @@ The verification then proceeds by checking that every sequence of messages does 
  Including such unpredictable behaviours might lead to a deeper analysis of the protocol, which would also consider human errors.
  The contribution of this improved analysis would be enormous, as it would allow the devising of protocols that are secure in case of human errors. Also, it would inform about human errors protocols can handle.
 
+
+## Modelling Human Threats in Security Ceremonies (G. Bella, R. Giustolisi and C. Schürmann)
+
+Eventually, Bella et al.[3] devised a modular approach to include within the protocol verification four different human threat model, founding that some security properties collapse against the strongest model.
+The models are:
+- **Chatty**: human who discloses its information (long term password, random numbers ...)
+- **Cocky**: human who gives out its object (ticket, OTP token..)
+- **Receipt forger**: human who counterfeits printouts out of known information
+- **Object forger** human who counterfeits objects out of known information
+
+
 ## Modeling human errors in security protocols (D. Basin, S. Radomirovic and L. Schmid; 2016)
  Radomirovic et al.[1] formalised in Tamarin a model to include fallible humans in security protocols. They first model an untrained human as an agent who could leak his secrets (by mistake) and then limit his behaviour by adding a set of unbreakable rules (e.g., the leak of a private password is not an acceptable error). 
  Although the approach is interesting, it overlooks errors that involve the incorrect swapping (or even worst substitutions with sensible information) of parts of the messages and their interleaving.
@@ -37,6 +48,8 @@ Tool --creates-->     Mutation_rules --to automatically<br/>generate-->Mutations
 
 # References
 
-[1] Basin, David, Sasa Radomirovic, and Lara Schmid. "Modeling human errors in security protocols." 2016 IEEE 29th Computer Security Foundations Symposium (CSF). IEEE, 2016.
+[1] Basin David, Sasa Radomirovic, and Lara Schmid. "Modeling human errors in security protocols." 2016 IEEE 29th Computer Security Foundations Symposium (CSF). IEEE, 2016.
 
-[2] Sempreboni, Diego, and Luca Vigano. "X-Men: A mutation-based approach for the formal analysis of security ceremonies." 2020 IEEE European Symposium on Security and Privacy (EuroS&P). IEEE, 2020.
+[2] Sempreboni Diego, and Luca Vigano. "X-Men: A mutation-based approach for the formal analysis of security ceremonies." 2020 IEEE European Symposium on Security and Privacy (EuroS&P). IEEE, 2020.
+
+[3] Bella Giampaolo, Rosario Giustolisi, and Carsten Schürmann. "Modelling human threats in security ceremonies." Journal of Computer Security Preprint (2022): 1-23
